@@ -61,3 +61,14 @@ plot(x,y,col="green")
 8/30
 0.1+0.16+0.3+0.26
 1-0.82
+
+str(Bears) #structure Bears
+Bears$Sex = as.factor(Bears$Sex) #Changing the variable sex to factor
+Bears$Month = as.factor(Bears$Month) #Changing the variable month to factor
+
+hist(Bears$Age)              #Histogram
+pie(table(Bears$Sex))        #Pie chart
+barplot(table(Bears$Sex))    #Bar chart
+pie(table(Bears$Month))      #Pie chart
+
+getwd()
